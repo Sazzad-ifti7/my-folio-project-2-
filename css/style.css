@@ -1,0 +1,356 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* common elements */
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+  
+ul {
+  list-style: none;
+  }
+a {
+  text-decoration: none;
+}
+  
+.container {
+  width: 1170px;
+  margin: auto;
+}
+  
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.align-center {
+  align-items: center;
+}
+
+.heading {
+  font-size: 46px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgb(2, 145, 140);
+  text-align: center;
+
+}
+
+.heading span {
+  display: block;
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.card {
+  width: 25%;
+  text-align: center;
+  padding: 35px 0;
+  border-right: 1px solid #d9dbdb;
+  margin-top: 80px;
+
+}
+  
+.card .icon {
+  color: #02918c;
+  font-size: 33px;
+}
+
+.card h4{
+  color: #7e8287;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 25px 0;
+}
+
+.card p {
+  color: #7e8287;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 0 50px;
+  line-height: 25px;
+}
+
+#about .card:last-child{
+  border: none;
+}
+
+footer{
+  text-align: center;
+  color: #7e8287;
+  background-color: #000000;
+  height: 75px;
+  padding-top: 35px;
+}
+/* Common elements ends */
+
+
+
+/* nav starts */
+
+nav {
+  background-color: #02918b;
+}
+
+nav .logo {
+  width: 40%;
+}
+
+nav .menu {
+  width: 60%;
+}
+  
+nav .menu ul {
+  text-align: right;
+}
+
+nav .menu ul li {
+  display: inline-block;
+}
+  
+nav .menu ul li a {
+  font-weight: 800;
+  font-size: 12px;
+  color: white;
+  padding: 25px 25px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+nav .menu ul li a:hover{
+  background-color: white;
+  color: #02918b;
+}
+  
+/* nav ends */
+  
+/* banner starts */
+#banner {
+  height: 728px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../image/banner.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  color: white;
+  text-align: center;
+}
+  
+#banner .banner_cnt {
+  width: 100%;
+}
+  
+#banner .row {
+  height: 728px;
+}
+  
+#banner .banner_cnt h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+  
+#banner .banner_cnt h1 {
+  font-weight: 800;
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+}
+  
+#banner .banner_cnt p {
+  font-size: 18px;
+  font-weight: 400;
+}
+  
+#banner .banner_cnt img {
+  margin: 50px 0;
+}
+
+#banner .banner_cnt a {
+  background-color: #cfc91d;
+  color: #0b1016;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 15px 43px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+  
+#banner .banner_cnt a:hover {
+  background-color: #0b1016;
+  color: #cfc91d;
+  font-size: 15px;
+}
+  
+/* banner ends */
+
+/* ABout starts here */
+
+#about{
+  padding: 98px 0;
+}
+#about .intro {
+  color: #7e8287;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 165px;
+  line-height: 34px;
+}
+
+/* About ends here */
+
+/* service starts here */
+#service {
+  padding: 74px 0;
+  background-image: url(../image/service.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#service .service_content {
+  width: 50%;
+}
+
+#service .service_content .heading {
+  text-align: left;
+}
+ #service .service_content .card {
+  width: 50%;
+  border: none;
+  text-align: left;
+ }
+
+ #service .service_content .card p{
+  padding-left: 0;
+ }
+
+
+/* service ends here */
+
+/* work section starts */
+
+#work .intro {
+  
+  padding: 0 290px;
+  font-size: 16px;
+  line-height: 41px;
+  color: #7e8287;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+#work {
+  padding: 110px 0;
+}
+#work .workcard{
+  width: 25%;
+  position: relative;
+} 
+
+#work .workcard img{
+  display: block;
+  width: 100%;
+}
+
+#work .intro {
+
+  padding-bottom: 80px;
+}
+
+#work .workcard .overlay {
+
+  background-color: rgba(2, 145, 139, 0.85);
+  position: absolute;
+  inset: 20px;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  transform: scale(0) ;
+  transition: 0.8s;
+
+}
+
+#work .workcard:hover .overlay {
+  transform: scale(1);
+}
+
+/* work section ends */
+
+
+
+
+/* contact section starts */
+
+#Contact {
+  text-align: center;
+}
+
+#Contact .intro {
+  padding: 0 275px;
+  font-size: 16px;
+  line-height: 41px;
+  color: #7e8287;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 60px;
+
+}
+
+
+
+#Contact .form_creation{
+ background-color: #0a0a0b;
+padding: 60px 0;
+
+}
+
+.form_input {
+  width: 600px;
+  margin: 0 auto 20px auto;
+
+}
+
+
+.form_input input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+  
+}
+.form_input textarea {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+#Contact a {
+  background-color: #cfc91d;
+  color: #0b1016;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 15px 43px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+  
+  
+}
+
+/* contact section starts */
